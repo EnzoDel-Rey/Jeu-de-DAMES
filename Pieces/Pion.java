@@ -2,12 +2,9 @@ package pieces;
 
 public class Pion extends Piece {
 
-    public Pion(String couleur) {
-        super(couleur);
-    }
+    public Pion(String c){
 
-    @Override
-    public String getType() {
-        return "PION";
+        super(c);
+
     }
 }
