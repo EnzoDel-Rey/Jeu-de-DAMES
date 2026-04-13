@@ -16,7 +16,7 @@ public class PlateauPanel extends JPanel {
 
     private String joueur="ROUGE";
 
-    private int scoreBlanc=0;
+    private int scoreRouge =0;
     private int scoreNoir=0;
 
     private JLabel info;
@@ -103,7 +103,7 @@ public class PlateauPanel extends JPanel {
                     if(cible.getCouleur().equals("ROUGE"))
                         scoreNoir++;
                     else
-                        scoreBlanc++;
+                        scoreRouge++;
 
                     plateau.getCase(x,y).setPiece(p);
                     plateau.getCase(selX,selY).setPiece(null);
@@ -155,13 +155,13 @@ public class PlateauPanel extends JPanel {
             joueur="ROUGE";
 
         info.setText("Tour : "+joueur+
-                " | Score Rouge "+scoreBlanc+
+                " | Score Rouge "+ scoreRouge +
                 " - Noir "+scoreNoir);
     }
 
     private void verifierVictoire(){
 
-        if(scoreBlanc>=12){
+        if(scoreRouge >=12){
 
             JOptionPane.showMessageDialog(this,"ROUGE gagne !");
             System.exit(0);

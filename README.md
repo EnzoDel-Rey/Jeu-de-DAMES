@@ -43,5 +43,4 @@ java Main
 
 ## Auteur
 
-Nom Prénom
-Nom Prénom
+Del-Rey Enzo
